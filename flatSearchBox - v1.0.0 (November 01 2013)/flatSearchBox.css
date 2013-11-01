@@ -1,0 +1,51 @@
+/**
+ * Flat SearchBox
+ * http://www.gk-blog.fr/blog/article/Flat SearchBox
+ *
+ * @file
+ * flatSearchBox.css
+ *
+ * @version
+ * 1.0.0 (November 01 2013)
+ * 
+ * @copyright
+ * Copyright (C) 2013-2014 Sébastien Doutre.
+ *
+ * @license
+ * GPL licenses.
+ */
+
+.flatSearchBox{width: 210px;height: 30px;border-radius: 2px 5px 5px 2px;position: relative;}
+
+.flatSearchBox.turquoise{border: 1px solid #16A085;background-color: #16A085;}
+.flatSearchBox.emerald{border: 1px solid #27AE60;background-color: #27AE60;}
+.flatSearchBox.blue{border: 1px solid #2980B9;background-color: #2980B9;}
+.flatSearchBox.amethyst{border: 1px solid #8E44AD;background-color: #8E44AD;}
+.flatSearchBox.asphalt{border: 1px solid #2C3E50;background-color: #2C3E50;}
+.flatSearchBox.orange{border: 1px solid #F39C12;background-color: #F39C12;}
+.flatSearchBox.carrot{border: 1px solid #D35400;background-color: #D35400;}
+.flatSearchBox.red{border: 1px solid #C0392B;background-color: #C0392B;}
+.flatSearchBox.silver{border: 1px solid #BDC3C7;background-color: #BDC3C7;}
+.flatSearchBox.grey{border: 1px solid #7F8C8D;background-color: #7F8C8D;}
+.flatSearchBox.white{border: 1px solid black;background-color: white;}
+
+.flatSearchBox .fltInputSearch, .flatSearchBox .fltInputSearchBlackWhite{height: 30px;background-color: transparent;outline: none;width: 180px;font-size : 14px;border: none;position: absolute;padding: 0 5px 0 5px;font-family: Arial, Helvetica, sans-serif;-webkit-transition: background-color 0.5s linear;transition: background-color 0.5s linear;box-sizing: border-box;-moz-box-sizing: border-box;z-index: 10;}
+.flatSearchBox .fltInputSearch{color: white;}
+.flatSearchBox .fltInputSearchBlackWhite{color: black;}
+.flatSearchBox .fltInputSearch:focus, .flatSearchBox .fltInputSearch:hover{background-color: rgba(255, 255, 255, 0.2);}
+
+.flatSearchBox .fltPlaceholder, .flatSearchBox .fltPlaceholderBlackWhite{display: block;height: 30px;background-color: transparent;font-size : 14px;border: none;position: absolute;padding-left: 35px;line-height: 30px;font-family: Arial, Helvetica, sans-serif;}
+.flatSearchBox .fltPlaceholder.begin, .flatSearchBox .fltPlaceholderBlackWhite.begin{-webkit-transition: opacity 0.5s linear;transition: opacity 0.5s linear;opacity: 1;}
+.flatSearchBox .fltPlaceholder.end, .flatSearchBox .fltPlaceholderBlackWhite.end{-webkit-transition: opacity 0.5s linear;transition: opacity 0.5s linear;opacity: 0;}
+
+.flatSearchBox .fltPlaceholder{color: white;}
+.flatSearchBox .fltPlaceholderBlackWhite{color: black;}
+
+.flatSearchBox .fltGlass{position: absolute;width: 30px;height: 30px;}
+.flatSearchBox .fltGlass.begin{left: 0px;-webkit-transform: rotateY(180deg);transform: rotateY(180deg);-webkit-transition: 1s;transition: 1s;}
+.flatSearchBox .fltGlass.end{left: 180px;-webkit-transform: rotateY(720deg);transform: rotateY(720deg);-webkit-transition: 1s;transition: 1s;-webkit-animation: shake 2s 1.5s infinite linear;animation: shake 2s 1.5s infinite linear;}
+ 
+@-webkit-keyframes shake{0%{-webkit-transform: rotate(0deg);}5% {-webkit-transform: rotate(20deg);}10%{-webkit-transform: rotate(0deg);}15% {-webkit-transform: rotate(-20deg);}20% {-webkit-transform: rotate(0deg);}25%{-webkit-transform: rotate(20deg);}30% {-webkit-transform: rotate(0deg);}70% {-webkit-transform: rotate(0deg);}80%{-webkit-transform: rotate(0deg);}90% {-webkit-transform: rotate(0deg);}100% {-webkit-transform: rotate(0deg);}}
+
+@keyframes shake{0%{transform: rotate(0deg);}5% {transform: rotate(20deg);}10%{transform: rotate(0deg);}15% {transform: rotate(-20deg);}20% {transform: rotate(0deg);}25%{transform: rotate(20deg);}30% {transform: rotate(0deg);}70% {transform: rotate(0deg);}80%{transform: rotate(0deg);}90% {transform: rotate(0deg);}100% {transform: rotate(0deg);}}
+		
